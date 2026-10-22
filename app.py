@@ -9,7 +9,7 @@ st.set_page_config(
     layout="centered"
 )
 
-MODEL_PATH = Path(_file_).parent / "student_score_model.joblib"
+MODEL_PATH = Path(__file__).parent / "student_score_model.joblib"
 
 @st.cache_resource
 def load_model():
